@@ -245,8 +245,8 @@ ul li {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #000;
-  -webkit-transition: all 1s linear 0s;
-          transition: all 1s linear 0s;
+  -webkit-transition: all 0.2s linear 0s;
+          transition: all 0.2s linear 0s;
 }
 .navbar-custom .navbar-nav li {
   margin: 0;
@@ -278,8 +278,8 @@ ul li {
 .navbar-solid {
   background-color: #000 !important;
   padding: 0 !important;
-  -webkit-transition: all 1s linear 0s;
-          transition: all 1s linear 0s;
+  -webkit-transition: all 0.2s linear 0s;
+          transition: all 0.2s linear 0s;
 }
 
 .site-branding {
@@ -370,6 +370,10 @@ ul li {
 /* 
  * 6.2 Section: Facts
  */
+.facts i {
+  color: #fff;
+  font-size: 3em;
+}
 .facts h3 {
   color: #fff;
   text-align: center;
