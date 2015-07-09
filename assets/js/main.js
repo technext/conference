@@ -2,21 +2,40 @@
  * Change Navbar color while scrolling
 */
 
-var menu = $('#site-nav');
-var origOffsetY = menu.offset().top;
+// var menu = $('#site-nav');
+// var origOffsetY = menu.offset().top;
 
-function navbarAnimation() {
-    if ($(window).scrollTop() > origOffsetY) {
-        $('#site-nav').addClass('navbar-solid');
-    } else {
-        $('#site-nav').removeClass('navbar-solid');
-    }
+// function navbarAnimation() {
+//     if ($(window).scrollTop() > origOffsetY) {
+//         $('#site-nav').addClass('navbar-solid');
+//     } else {
+//         $('#site-nav').removeClass('navbar-solid');
+//     }
 
-}
+// }
 
-$(window).scroll(function() {
-    navbarAnimation();
+// $(window).scroll(function() {
+//     navbarAnimation();
+// });
+
+$(window).scroll(function(){
+	handleTopNavAnimation();
 });
+
+$(window).load(function(){
+	handleTopNavAnimation();
+});
+
+function handleTopNavAnimation() {
+	var top=$(window).scrollTop();
+
+	if(top>10){
+		$('#site-nav').addClass('navbar-solid'); 
+	}
+	else{
+		$('#site-nav').removeClass('navbar-solid'); 
+	}
+}
 
 /*
  * Isotop for Photos
