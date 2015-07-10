@@ -195,10 +195,10 @@
 /* ---- isotop grid ---- */
 
 .grid {
-	list-style-type: none;
+	background: transparent;
+	list-style: none;
 	padding: 0;
 	margin: 0;
-
 	&::after {
 		content: '';
 		display: block;
@@ -206,32 +206,23 @@
 	}
 }
 
+.grid-sizer,
+.grid-item {
+	width: 1%;
+}
+
 .grid-item {
 	float: left;
 	overflow: hidden;
 	padding: 3px;
-	margin: 0;
 }
 
-@media (min-width: 768px) {
-	.grid-item-sm-6 {
-		width: 50%;
-	}
-
-	.grid-item-sm-3 {
-		width: 25%;
-	}
+.grid-item-6 {
+	width: 50%;
 }
 
-
-@media (min-width: 992px) {
-	.grid-item-md-6 {
-		width: 50%;
-	}
-
-	.grid-item-md-3 {
-		width: 25%;
-	}
+.grid-item-3 {
+	width: 25%;
 }
 
 @media (min-width: 768px) {
