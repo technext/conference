@@ -531,8 +531,7 @@ ul li {
  */
 /* ---- isotop grid ---- */
 .grid {
-  background: transparent;
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -542,25 +541,31 @@ ul li {
   clear: both;
 }
 
-.grid-sizer,
-.grid-item {
-  width: 1%;
-}
-
 .grid-item {
   float: left;
   overflow: hidden;
   padding: 3px;
+  margin: 0;
 }
 
-.grid-item-6 {
-  width: 50%;
-}
+@media (min-width: 768px) {
+  .grid-item-sm-6 {
+    width: 50%;
+  }
 
-.grid-item-3 {
-  width: 25%;
+  .grid-item-sm-3 {
+    width: 25%;
+  }
 }
+@media (min-width: 992px) {
+  .grid-item-md-6 {
+    width: 50%;
+  }
 
+  .grid-item-md-3 {
+    width: 25%;
+  }
+}
 @media (min-width: 768px) {
   .section-title {
     margin: 0 0 30px;
