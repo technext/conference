@@ -101,6 +101,14 @@ ul {
 	border-radius: 0;
 	padding: 6px 28px;
 	text-transform: uppercase;
+	transform: translateZ(0);
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	transition-duration: 0.3s;
+	transition-property: transform;
+	&:hover {
+		transform: scale(0.9);
+	}
 }
 
 .form-control {
