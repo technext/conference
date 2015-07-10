@@ -94,6 +94,20 @@ ul li {
   border-radius: 0;
   padding: 6px 28px;
   text-transform: uppercase;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+          transition-property: transform;
+}
+.btn:hover {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .form-control {
@@ -396,6 +410,9 @@ ul li {
 .speaker p {
   margin-bottom: 5px;
 }
+.speaker img:hover {
+  opacity: .7;
+}
 
 /* 
  * 6.4 Section: Registration & Pricing
@@ -512,10 +529,8 @@ ul li {
 /* 
  * 6.9 Section: photos
  */
-/* ---- isotop grid ---- */
 .grid {
-  background: transparent;
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
 }
@@ -525,26 +540,23 @@ ul li {
   clear: both;
 }
 
-.grid-sizer,
-.grid-item {
-  width: 1%;
-}
-
 .grid-item {
   float: left;
   overflow: hidden;
   padding: 3px;
-}
-
-.grid-item-6 {
-  width: 50%;
-}
-
-.grid-item-3 {
-  width: 25%;
+  margin: 0;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
+  .grid-item-sm-6 {
+    width: 50%;
+  }
+
+  .grid-item-sm-3 {
+    width: 25%;
+  }
+
   .section-title {
     margin: 0 0 30px;
   }
@@ -556,6 +568,14 @@ ul li {
 @media (min-width: 992px) {
   .schedule-box {
     margin: 0;
+  }
+
+  .grid-item-md-6 {
+    width: 50%;
+  }
+
+  .grid-item-md-3 {
+    width: 25%;
   }
 }
 /* 

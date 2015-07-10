@@ -2,22 +2,6 @@
  * Change Navbar color while scrolling
 */
 
-// var menu = $('#site-nav');
-// var origOffsetY = menu.offset().top;
-
-// function navbarAnimation() {
-//     if ($(window).scrollTop() > origOffsetY) {
-//         $('#site-nav').addClass('navbar-solid');
-//     } else {
-//         $('#site-nav').removeClass('navbar-solid');
-//     }
-
-// }
-
-// $(window).scroll(function() {
-//     navbarAnimation();
-// });
-
 $(window).scroll(function(){
 	handleTopNavAnimation();
 });
@@ -38,17 +22,8 @@ function handleTopNavAnimation() {
 }
 
 /*
- * Isotop for Photos
+ * Registration Form
 */
-
-$('.grid').isotope({
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    masonry: {
-        // use outer width of grid-sizer for columnWidth
-        columnWidth: '.grid-sizer'
-    }
-})
 
 $('#registration-form').submit(function(e){
     e.preventDefault();

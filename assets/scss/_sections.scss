@@ -49,6 +49,10 @@
 	p {
 		margin-bottom: 5px;
 	}
+
+	img:hover {
+		opacity: .7;
+	}
 }
 
 /* 
@@ -188,11 +192,8 @@
  * 6.9 Section: photos
  */
 
-/* ---- isotop grid ---- */
-
 .grid {
-	background: transparent;
-	list-style: none;
+	list-style-type: none;
 	padding: 0;
 	margin: 0;
 	&::after {
@@ -202,26 +203,23 @@
 	}
 }
 
-.grid-sizer,
-.grid-item {
-	width: 1%;
-}
-
 .grid-item {
 	float: left;
 	overflow: hidden;
 	padding: 3px;
-}
-
-.grid-item-6 {
-	width: 50%;
-}
-
-.grid-item-3 {
-	width: 25%;
+	margin: 0;
+	width: 100%;
 }
 
 @media (min-width: 768px) {
+	.grid-item-sm-6 {
+		width: 50%;
+	}
+
+	.grid-item-sm-3 {
+		width: 25%;
+	}
+
 	.section-title {
 		margin: 0 0 30px;
 	}
@@ -234,5 +232,13 @@
 @media (min-width: 992px) {
 	.schedule-box {
 		margin: 0;
+	}
+
+	.grid-item-md-6 {
+		width: 50%;
+	}
+
+	.grid-item-md-3 {
+		width: 25%;
 	}
 }
