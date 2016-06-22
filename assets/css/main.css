@@ -323,6 +323,7 @@ ul li {
   position: relative;
   text-align: center;
   background: url(../images/backgrounds/header.jpg) no-repeat center center/cover;
+  display: table;
 }
 .site-header::before {
   content: "";
@@ -341,6 +342,9 @@ ul li {
   width: 100%;
   z-index: 1;
   padding: 0 15px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100vh;
 }
 .site-header .intro h2 {
   margin-top: 0px;
